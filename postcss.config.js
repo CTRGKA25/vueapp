@@ -1,5 +1,20 @@
 module.exports = {
   plugins: {
-    autoprefixer: {},
+    autoprefixer: {
+      overrideBrowserslist: ['Android 4.1', 'iOS 7.1', 'Chrome > 31', 'ff > 31', 'ie >= 8'],
+    },
+    'postcss-px-to-viewport': {
+      unitToConvert: 'px',
+      viewportWidth: 375,
+      unitPrecision: 6,
+      propList: ['*'],
+      viewportUnit: 'vw',
+      fontViewportUnit: 'vw',
+      selectorBlackList: ['van-', '.ignore'],
+      minPixelValue: 1,
+      mediaQuery: true,
+      exclude: [],
+      landscape: false,
+    },
   },
 }

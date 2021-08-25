@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-tabbar fixed route v-model="active">
+    <van-tabbar fixed route v-model="active" class="ignore-max-container" style="right: 0">
       <van-tabbar-item replace to="/home">
         <span>首页</span>
         <template #icon="props">

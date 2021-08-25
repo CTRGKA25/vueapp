@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./src/assets/images/logo.png"/>
+    <img src="./src/assets/images/logo-vue.png"/>
     <h1>vue2-vant-template</h1>
 </div>
 

@@ -1,10 +1,17 @@
 <template>
-  <div> 首页哈 </div>
+  <div class="app-container">
+    <div style="display: flex; justify-content: center">
+      <img src="../../assets/images/logo-vue.png" />
+    </div>
+    <div style="display: flex; justify-content: center">
+      <h1>Vue2 Vant Template脚手架</h1>
+    </div>
+  </div>
 </template>
 
 <script>
   export default {
-    name: 'index',
+    name: 'Home',
   }
 </script>
 

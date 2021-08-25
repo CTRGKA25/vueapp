@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="ignore-max-container">
     <router-view />
   </div>
 </template>

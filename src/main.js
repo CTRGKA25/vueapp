@@ -6,6 +6,9 @@ import store from './store'
 // svg icon
 import './assets/svg-icon'
 
+// global css
+import './assets/styles/index.scss'
+
 Vue.config.productionTip = false
 
 new Vue({
