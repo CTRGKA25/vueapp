@@ -7,7 +7,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn dev
 ```
 
 ### Compiles and minifies for production
@@ -20,5 +20,31 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 指定环境打包
+```
+yarn build:test
+yarn build:uat
+yarn build:prod
+```
+
+### 编码规范
+
+1、所有的Component文件都是以大写开头 (PascalCase)
+
+2、所有的.js文件都遵循横线连接 (kebab-case)
+
+3、在views文件下，代表路由的.vue文件都使用横线连接 (kebab-case)，代表路由的文件夹也是使用同样的规则
+
+4、api下模块和view下模块，一一对应
+
+### CSS
+BEM：就是块（block）、元素（element）、修饰符（modifier）
+```
+.block{}
+.block__element{}
+.block--modifier{}
+
+.block 代表了更高级别的抽象或组件。
+.block__element 代表.block的后代，用于形成一个完整的.block的整体。
+.block--modifier代表.block的不同状态或不同版本
+```
