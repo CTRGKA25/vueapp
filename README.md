@@ -28,6 +28,8 @@ Vue2 Vant Template，基于Vue2 + Vue Router + Vuex + Vant等技术，实现的�
 - compression-webpack-plugin，打包Gizp压缩
 - script-ext-html-webpack-plugin，按模块打包
 - autoprefixer，css前缀
+- babel-plugin-import，按需引入
+- babel-plugin-dynamic-import-node，动态引入，懒加载
 
 ## 预览
 
