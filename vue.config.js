@@ -1,9 +1,11 @@
 'use strict'
 const path = require('path')
-
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
+// gzip 压缩
+const CompressionWebpackPlugin = require('compression-webpack-plugin')
+const productionGzipExtensions = ['js', 'html', 'css']
 
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
@@ -37,6 +39,15 @@ module.exports = {
         '@': resolve('src'),
       },
     },
+    plugins: [
+      new CompressionWebpackPlugin({
+        algorithm: 'gzip',
+        test: new RegExp('\\.(' + productionGzipExtensions.join('|') + ')$'), // 匹配文件名
+        threshold: 10240, // 对超过10k的数据进行压缩
+        minRatio: 0.8,
+        deleteOriginalAssets: false, // 是否删除原文件
+      }),
+    ],
   },
   chainWebpack(config) {
     // it can improve the speed of the first screen, it is recommended to turn on preload
