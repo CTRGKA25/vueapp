@@ -9,6 +9,12 @@ import './assets/svg-icon'
 // global css
 import './assets/styles/index.scss'
 
+// vant
+import './plugins/vant.js'
+
+// tools
+import './plugins/tools.js'
+
 Vue.config.productionTip = false
 
 new Vue({
