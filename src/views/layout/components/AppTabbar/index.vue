@@ -1,10 +1,20 @@
 <template>
   <div>
-    <van-tabbar fixed route v-model="active" class="ignore-max-container" style="right: 0">
+    <van-tabbar
+      fixed
+      route
+      v-model="active"
+      :active-color="$store.getters.themeColor"
+      class="ignore-max-container"
+      style="right: 0"
+    >
       <van-tabbar-item replace to="/home">
         <span>首页</span>
         <template #icon="props">
-          <template v-if="props.active">
+          <template
+            v-if="props.active"
+            :style="props.active ? { fill: $store.getters.themeColor } : {}"
+          >
             <svg-icon icon-class="icon-tabbar-home-fill" />
           </template>
           <template v-else>
@@ -15,18 +25,24 @@
       <van-tabbar-item replace to="/home">
         <span>分类</span>
         <template #icon="props">
-          <template v-if="props.active">
-            <svg-icon icon-class="icon-tabbar-message-fill" />
+          <template
+            v-if="props.active"
+            :style="props.active ? { fill: $store.getters.themeColor } : {}"
+          >
+            <svg-icon icon-class="icon-tabbar-subcribe-fill" />
           </template>
           <template v-else>
-            <svg-icon icon-class="icon-tabbar-message" />
+            <svg-icon icon-class="icon-tabbar-subcribe" />
           </template>
         </template>
       </van-tabbar-item>
       <van-tabbar-item replace to="/home">
         <span>通知</span>
         <template #icon="props">
-          <template v-if="props.active">
+          <template
+            v-if="props.active"
+            :style="props.active ? { fill: $store.getters.themeColor } : {}"
+          >
             <svg-icon icon-class="icon-tabbar-comment-fill" />
           </template>
           <template v-else>
@@ -37,7 +53,10 @@
       <van-tabbar-item replace to="/home">
         <span>我的</span>
         <template #icon="props">
-          <template v-if="props.active">
+          <template
+            v-if="props.active"
+            :style="props.active ? { fill: $store.getters.themeColor } : {}"
+          >
             <svg-icon icon-class="icon-tabbar-mine-fill" />
           </template>
           <template v-else>
