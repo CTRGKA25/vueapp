@@ -33,6 +33,8 @@ Vue2 Vant Template，基于Vue2 + Vue Router + Vuex + Vant等技术，实现的�
 
 ## 预览
 
+演示地址：[https://skysong.gitee.io/vue2-vant-template](https://skysong.gitee.io/vue2-vant-template)
+
 ## Project setup
 ```
 yarn install
