@@ -1,15 +1,15 @@
 import { Layout } from '../constants'
 
-const HomeRoute = {
+const loginRoute = {
   path: '/home',
   component: Layout,
   children: [
     {
-      path: '/home',
-      name: 'Home',
-      component: () => import('@/views/home/index'),
+      path: '/login',
+      name: 'login',
+      component: () => import('@/views/login/index'),
       meta: { title: '仪表盘', keepAlive: false, showTab: true },
     },
   ],
 }
-export default HomeRoute
+export default loginRoute

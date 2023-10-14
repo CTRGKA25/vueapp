@@ -19,7 +19,7 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ? '/vue2-vant-template/' : '/',
   outputDir: 'dist',
   assetsDir: 'static',
-  lintOnSave: process.env.NODE_ENV === 'development',
+  lintOnSave: false,
   productionSourceMap: false,
   devServer: {
     port: process.env.VUE_APP_PORT,

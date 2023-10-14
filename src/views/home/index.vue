@@ -1,17 +1,9 @@
 <template>
-  <div class="app-container">
-    <example></example>
-  </div>
+  <div class="app-container"> 213123 </div>
 </template>
 
 <script>
-  import Example from '../example/index'
-  export default {
-    name: 'Home',
-    components: {
-      Example,
-    },
-  }
+  export default {}
 </script>
 
 <style scoped></style>

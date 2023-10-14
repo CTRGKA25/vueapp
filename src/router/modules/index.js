@@ -1,9 +1,13 @@
 import { Layout } from '../constants'
 import HomeRoute from './home'
-const RootRoute = {
-  path: '/',
-  component: Layout,
-  redirect: '/home',
-}
+import loginRoute from './login'
+import recordRoute from './record'
+import userRoute from './user'
 
-export const basicRoutes = [RootRoute, HomeRoute]
+// const RootRoute = {
+//   path: '/',
+//   component: Layout,
+//   redirect: '/home',
+// }
+
+export const basicRoutes = [HomeRoute, loginRoute, recordRoute, userRoute]

@@ -9,12 +9,9 @@
       style="right: 0"
     >
       <van-tabbar-item replace to="/home">
-        <span>首页</span>
+        <span>仪表盘</span>
         <template #icon="props">
-          <template
-            v-if="props.active"
-            :style="props.active ? { fill: $store.getters.themeColor } : {}"
-          >
+          <template v-if="props.active">
             <svg-icon icon-class="icon-tabbar-home-fill" />
           </template>
           <template v-else>
@@ -22,13 +19,10 @@
           </template>
         </template>
       </van-tabbar-item>
-      <van-tabbar-item replace to="/home">
-        <span>分类</span>
+      <van-tabbar-item replace to="/record">
+        <span>推广记录</span>
         <template #icon="props">
-          <template
-            v-if="props.active"
-            :style="props.active ? { fill: $store.getters.themeColor } : {}"
-          >
+          <template v-if="props.active">
             <svg-icon icon-class="icon-tabbar-subcribe-fill" />
           </template>
           <template v-else>
@@ -36,27 +30,11 @@
           </template>
         </template>
       </van-tabbar-item>
-      <van-tabbar-item replace to="/home">
-        <span>通知</span>
+
+      <van-tabbar-item replace to="/user">
+        <span>个人设置</span>
         <template #icon="props">
-          <template
-            v-if="props.active"
-            :style="props.active ? { fill: $store.getters.themeColor } : {}"
-          >
-            <svg-icon icon-class="icon-tabbar-comment-fill" />
-          </template>
-          <template v-else>
-            <svg-icon icon-class="icon-tabbar-comment" />
-          </template>
-        </template>
-      </van-tabbar-item>
-      <van-tabbar-item replace to="/home">
-        <span>我的</span>
-        <template #icon="props">
-          <template
-            v-if="props.active"
-            :style="props.active ? { fill: $store.getters.themeColor } : {}"
-          >
+          <template v-if="props.active">
             <svg-icon icon-class="icon-tabbar-mine-fill" />
           </template>
           <template v-else>
