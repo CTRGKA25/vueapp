@@ -8,7 +8,7 @@ const loginRoute = {
       path: '/login',
       name: 'login',
       component: () => import('@/views/login/index'),
-      meta: { title: '仪表盘', keepAlive: false, showTab: true },
+      meta: { title: '仪表盘', keepAlive: false, showTab: false },
     },
   ],
 }

@@ -4,10 +4,10 @@ import loginRoute from './login'
 import recordRoute from './record'
 import userRoute from './user'
 
-// const RootRoute = {
-//   path: '/',
-//   component: Layout,
-//   redirect: '/home',
-// }
+const RootRoute = {
+  path: '/',
+  component: Layout,
+  redirect: '/login',
+}
 
-export const basicRoutes = [HomeRoute, loginRoute, recordRoute, userRoute]
+export const basicRoutes = [RootRoute,HomeRoute, loginRoute, recordRoute, userRoute]
